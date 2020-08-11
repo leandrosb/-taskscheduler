@@ -14,4 +14,4 @@ test:
 	FLASK_ENV=test pytest tests/ -v --cov=taskscheduler
 
 run:
-	FLASK_APP=taskscheduler FLASK_ENV=development flask run
+	APP_ENV=local FLASK_APP=taskscheduler FLASK_ENV=development flask run
