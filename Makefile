@@ -11,7 +11,7 @@ clean:
 	rm -rf docs/_build
 
 test:
-	FLASK_ENV=test pytest tests/ -v --cov=taskscheduler
+	FLASK_ENV=test python -m pytest tests/ -v --cov=taskscheduler
 
 run:
 	APP_ENV=local FLASK_APP=taskscheduler FLASK_ENV=development flask run
