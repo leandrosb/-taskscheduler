@@ -20,3 +20,4 @@ after_success:
   - curl https://deepsource.io/cli | sh
   # Report coverage artifact to 'test-coverage' analyzer
   - ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
+  - coveralls
