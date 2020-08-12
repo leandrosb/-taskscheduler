@@ -12,7 +12,7 @@ addons:
       secure: "S4qEIjqOTKbyWKDCMu57I48/R/zE1GqwQPYiKjCV+PbKbgCdwNW5rBS1O1VTiBvSTYAhi01x81GoS/zaBIt0QM+ziYPNmSmFClf5g8qY41vpCQf7VtMlrOw9cZ26oKO/NI9Cfqq3kCUwzSygAWJIBoEHiGUfAFgYrv25CueOCKvtj1/Sf3MbB6tDDhTbGh/vu6fXnoa4o66htUrlP6/OdV9NuZKNHyb9XPN5ZeIWM1wRbT0zX9rkmE5ec+kiXwtC3npzjY3hBDu1rJFPdyrtiO1aFIS748KhS3rVfmXxww22r3b59NnkWiUrpHVXoN8GehB03ziPoikK2HYMBHNv/dK4bZcC3eFLM8+strCMXcuitZ8eJ7e0h66+W25zQueMmPlx6pI7xj2ti/y4caZMvEvec/0haf49MOKvA38KdhZZIVi8SFwf4mlph0Jzc3+HxUmJnS6Ty3yoB+D0qgMOBfUwD7SYdS+ps88JkpD17WKUJeP8S5HSNOzvX0F2Biy7j8LB5XHNMyT5W+k7quDi/P8w/aE2O+/WjKprHO7zitx2qQ9CMbucw/bmSGVsZLgQUfJJZzbJqe2PpADoYp+lgBySC5/6qUKzMHtNRLo/hmUf8dbN0J7NHucHgI+da3UB0QdbdjApn7pNubY9rIDc+CGqAuFYFq6Gadvi0ekW4mk="
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - sonar-scanner
+  #- sonar-scanner
   - coverage run --source=taskscheduler setup.py test
 after_success:
   - coverage xml
