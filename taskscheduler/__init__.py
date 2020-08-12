@@ -3,7 +3,7 @@ from .restplus import api
 
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask("taskscheduler")
     api.init_app(app)
 
     return app

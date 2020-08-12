@@ -10,6 +10,9 @@ clean:
 	rm -rf .tox/
 	rm -rf docs/_build
 
+lint:
+	flake8 taskscheduler
+
 test:
 	FLASK_ENV=test python -m pytest tests/ -v --cov=taskscheduler
 
