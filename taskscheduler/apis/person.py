@@ -9,7 +9,7 @@ class Person():
         self.name = None
         self.age = None
         self.genre = None
-        self.person = dict()
+        self.person = {}
 
     def insert(self, name: str, age: int, genre: str) -> Dict:
         """[insert person]
