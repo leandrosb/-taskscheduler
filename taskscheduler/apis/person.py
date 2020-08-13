@@ -6,6 +6,10 @@ class Person():
     """
     def __init__(self) -> None:
         self._persons = []
+        self.name = None
+        self.age = None
+        self.genre = None
+        self.person = dict()
 
     def insert(self, name: str, age: int, genre: str) -> Dict:
         """[insert person]
