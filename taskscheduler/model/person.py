@@ -1,7 +1,7 @@
 from typing import Dict
 
 
-class Person():
+class person():
     """Class of person"""
 
     def __init__(self) -> None:
@@ -12,9 +12,7 @@ class Person():
         self.person = {}
 
     def insert(self, name: str, age: int, genre: str) -> Dict:
-        """
-        insert person
-
+        """insert person
         Args:
             name (str): [name of person]
             age (int): [age of person]
