@@ -7,7 +7,6 @@ ns_root = Namespace('/', description='Endpoints root')
 class HealthCheck(Resource):
     @classmethod
     def get(cls):
-        """
-        Chamada para verificar status da aplicacao
-        """
+        """Chamada para verificar status da aplicacao"""
+
         return {'status': 'Ok'}, 200

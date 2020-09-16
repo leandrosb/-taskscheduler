@@ -2,8 +2,8 @@ from typing import Dict
 
 
 class Person():
-    """Class of person
-    """
+    """Class of person"""
+
     def __init__(self) -> None:
         self._persons = []
         self.name = None
@@ -12,7 +12,8 @@ class Person():
         self.person = {}
 
     def insert(self, name: str, age: int, genre: str) -> Dict:
-        """[insert person]
+        """
+        insert person
 
         Args:
             name (str): [name of person]
@@ -29,6 +30,6 @@ class Person():
         return self.person
 
     def addperson(self) -> None:
-        """[add person to the global object]
-        """
+        """add person to the global object"""
+
         self._persons.append(self.person)
